@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "nirf_backend/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "nirf_backend/wsgi.py"
+    }
+  ]
+}
